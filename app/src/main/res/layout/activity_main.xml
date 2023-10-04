@@ -62,6 +62,6 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView_Status"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu3bar" />
+        app:srcCompat="@drawable/menubar_3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
