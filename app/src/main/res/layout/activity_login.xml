@@ -16,8 +16,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView_Door"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48000002" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView_Door"
@@ -85,22 +84,22 @@
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        android:text="로그인"
         android:onClick="onButtonClick_Login"
+        android:text="로그인"
+        app:layout_constraintBottom_toTopOf="@+id/button_Register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText_PW"
-/>
+        app:layout_constraintTop_toBottomOf="@id/editText_PW" />
 
     <Button
         android:id="@+id/button_Register"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="30dp"
-        android:text="회원가입"
         android:onClick="onButtonClick_Register"
+        android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
