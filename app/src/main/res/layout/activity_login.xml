@@ -80,28 +80,28 @@
 
     <Button
         android:id="@+id/button_Login"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
         android:layout_marginTop="30dp"
-        android:onClick="onButtonClick_Login"
+        android:onClick="onButtonClick_Register"
         android:text="로그인"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/button_Register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editText_PW" />
 
     <Button
         android:id="@+id/button_Register"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="30dp"
         android:onClick="onButtonClick_Register"
         android:text="회원가입"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Login"
         app:layout_constraintVertical_bias="0.0" />
