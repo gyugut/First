@@ -23,7 +23,7 @@ import java.io.BufferedReader;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private EditText Register_ID, Register_PW, Register_Name; //회원가입 입력필드
+    private EditText Register_ID, Register_PW, Register_Name, Register_Major; //회원가입 입력필드
     private Button Register_Button;
 
     private FirebaseAuth regFirebaseAuth; // 파이어 베이스 인증
@@ -39,16 +39,19 @@ public class RegisterActivity extends AppCompatActivity {
 
         Register_ID = (EditText)findViewById(R.id.editText_ID_register);
         Register_PW = (EditText)findViewById(R.id.editText_PW_register);
-        Register_Name = (EditText)findViewById(R.id.editTextText_Name_register);
+        Register_Name = (EditText)findViewById(R.id.editText_Name_register);
+        Register_Major = (EditText) findViewById(R.id.editText_Major_register);
         Register_Button = (Button) findViewById(R.id.button_Register_register);
+
         Register_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //회원가입 처리 시작;
-                String Id, Password, Name;
+                String Id, Password, Name, Major;
                 Id = Register_ID.getText().toString();
                 Password = Register_PW.getText().toString();
                 Name = Register_Name.getText().toString();
+                Major = Register_Major.getText().toString();
 
                 //Firebase Auth start
                 regFirebaseAuth.createUserWithEmailAndPassword(Id, Password).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
