@@ -35,7 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         regFirebaseAuth = FirebaseAuth.getInstance();
-        regDatabaseRef = FirebaseDatabase.getInstance().getReference();
+        regDatabaseRef = FirebaseDatabase.getInstance().getReference("EmptyClassroom");
 
         Register_ID = (EditText)findViewById(R.id.editText_ID_register);
         Register_PW = (EditText)findViewById(R.id.editText_PW_register);
@@ -56,12 +56,24 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) { // 가입 성공시
                         if(task.isSuccessful()){
                             FirebaseUser firebaseUser = regFirebaseAuth.getCurrentUser();
+                            UserAccount account = new UserAccount();
+                            account.setIdToken(firebaseUser.getUid());
+                            account.setUserID(firebaseUser.getEmail());
+                            account.setUserPW(Password);
+                            //account.setUserNumber();
+
+                            // insert UserUID in Database
+                            regDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
+
+                            Toast.makeText(RegisterActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                            startActivity(intent);
+
+                        } else {
+                            Toast.makeText(RegisterActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
-                Toast.makeText(getApplicationContext(), "회원가입이 완료되었습니다", Toast.LENGTH_LONG);
-                Intent intent_LoginActivity = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(intent_LoginActivity);
 
             }
         });
