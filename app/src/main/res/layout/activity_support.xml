@@ -29,7 +29,7 @@
             android:textSize="24dp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/button_Home_Support"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
@@ -39,7 +39,7 @@
 
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/button_Menu_Support"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
@@ -49,7 +49,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_component_Support"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,30 +57,56 @@
         app:srcCompat="@drawable/quartercircle" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editText_Support_Support"
         android:layout_width="304dp"
         android:layout_height="375dp"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="150dp"
+        android:background="@drawable/edittext_large"
         android:ems="10"
         android:inputType="text"
         android:text="문의할 내용을 입력해주세요"
-        android:background="@drawable/edittext_large"
+        android:textAlignment="center"
+        android:textColor="#A4A4A4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="34dp"
-        android:layout_height="45dp"
+        android:id="@+id/imageView_Contract_Support"
+        android:layout_width="31dp"
+        android:layout_height="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Support_Support"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/contract1" />
+
+    <Button
+        android:id="@+id/button_Submit_Support"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape_ordinary"
+        android:text="완료"
+        app:layout_constraintBottom_toTopOf="@+id/button_Back_Support"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Support_Support" />
+
+    <Button
+        android:id="@+id/button_Back_Support"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape_ordinary"
+        android:text="돌아가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
