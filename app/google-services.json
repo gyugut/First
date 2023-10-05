@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036530591319",
+    "project_id": "make-aa67b",
+    "storage_bucket": "make-aa67b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036530591319:android:2e2fd54cb548021e6ea512",
+        "android_client_info": {
+          "package_name": "com.example.first"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyYlt-GvtBY6QTucAJJjCBI0BAXCGim5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
