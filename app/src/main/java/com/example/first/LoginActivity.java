@@ -2,7 +2,6 @@ package com.example.first;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,10 +35,10 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-        Login_ID = (EditText)findViewById(R.id.editText_ID);
-        Login_PW = (EditText)findViewById(R.id.editText_PW);
-        Login_Button = (Button) findViewById(R.id.button_Login);
-        Register_Button = (Button) findViewById(R.id.button_Register);
+        Login_ID = (EditText)findViewById(R.id.editText_login_ID);
+        Login_PW = (EditText)findViewById(R.id.editText_login_PW);
+        Login_Button = (Button) findViewById(R.id.button_login_login);
+        Register_Button = (Button) findViewById(R.id.button_login_register);
         Login_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,8 +66,10 @@ public class LoginActivity extends AppCompatActivity {
         Register_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_RegisterActivity = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent_RegisterActivity);
+                //Intent intent_RegisterActivity = new Intent(LoginActivity.this, RegisterActivity.class);
+                //startActivity(intent_RegisterActivity);
+                Intent intent_temp = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent_temp);
             }
         });
     }

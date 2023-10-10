@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#F4F4F4"
-tools:context=".SupportActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeActivity">
 
 
     <LinearLayout
@@ -24,12 +23,12 @@ tools:context=".SupportActivity">
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="90dp"
-            android:text="Support"
+            android:text="Notice"
             android:textColor="@color/white"
             android:textSize="24dp" />
 
         <ImageButton
-            android:id="@+id/button_supportmenu_home"
+            android:id="@+id/button_notice_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
@@ -39,7 +38,7 @@ tools:context=".SupportActivity">
 
 
         <ImageButton
-            android:id="@+id/button_supportmenu_menu"
+            android:id="@+id/button_notice_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
@@ -48,87 +47,75 @@ tools:context=".SupportActivity">
             app:srcCompat="@drawable/menubar_3" />
     </LinearLayout>
     <ImageView
-        android:id="@+id/imageView_component_Supportmenu"
+        android:id="@+id/imageView_component_Support"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/quartercircle" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <TextView
+        android:id="@+id/textView_notice_noticestack1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/textviewshape_ordinary"
+        android:gravity="center"
+        android:text="경상대 3층 페인트 작업\n(10:00~14:00)"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.18"
-        app:srcCompat="@drawable/component6" />
+        app:layout_constraintVertical_bias="0.085" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <TextView
+        android:id="@+id/textView_notice_noticestack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/component11" />
-
-    <Button
-        android:id="@+id/button_supportmenu_appmalfunc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttonshape_ordinary_long"
-        android:text="앱 작동 오류"
+        android:layout_marginTop="-700dp"
+        android:background="@drawable/textviewshape_ordinary"
+        android:gravity="center"
+        android:text="공대 2호관 정문 계단 보수 공사\n(09:00~14:00)"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack3"
+        app:layout_constraintVertical_bias="0.734" />
 
-    <Button
-        android:id="@+id/button_supportmenu_diffclass"
+    <TextView
+        android:id="@+id/textView_notice_noticestack3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/buttonshape_ordinary_long"
-        android:text="강의실 정보 상이"
+        android:layout_marginTop="-140dp"
+        android:background="@drawable/textviewshape_ordinary"
+        android:gravity="center"
+        android:text="사회과학대학 201호 강의실 특강\n(13:00~16:00)"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_supportmenu_appmalfunc"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack1"
+        app:layout_constraintVertical_bias="0.305" />
 
     <Button
-        android:id="@+id/button_supportmenu_reportuser"
+        android:id="@+id/button_notice_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/buttonshape_ordinary_long"
-        android:text="이용자 신고"
+        android:text="돌아가기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_supportmenu_diffclass"
-        app:layout_constraintVertical_bias="0.07" />
-
-    <Button
-        android:id="@+id/button_supportmenu_facilitymaint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttonshape_ordinary_long"
-        android:text="시설 관리(청결, 시설)"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_supportmenu_reportuser"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack2"
+        android:background="@drawable/buttonshape_ordinary_small"
+        app:layout_constraintVertical_bias="0.882" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

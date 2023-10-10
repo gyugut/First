@@ -9,20 +9,20 @@
 
 
     <ImageButton
-        android:id="@+id/button_Search_Main"
+        android:id="@+id/button_main_search"
         android:layout_width="352dp"
         android:layout_height="62dp"
         android:padding="0dp"
         android:scaleType="fitCenter"
         android:text="Search"
-        app:layout_constraintBottom_toTopOf="@+id/button_Support_Main"
+        app:layout_constraintBottom_toTopOf="@+id/button_main_support"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/search_botton" />
 
     <ImageButton
-        android:id="@+id/button_Support_Main"
+        android:id="@+id/button_main_support"
         android:layout_width="352dp"
         android:layout_height="62dp"
         android:layout_marginBottom="64dp"
@@ -40,7 +40,7 @@
         android:layout_height="200dp"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="132dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_Search_Main"
+        app:layout_constraintBottom_toTopOf="@+id/button_main_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -68,7 +68,7 @@
             android:textSize="24dp" />
 
         <ImageButton
-            android:id="@+id/button_Home_Main"
+            android:id="@+id/button_main_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
@@ -78,7 +78,7 @@
 
 
         <ImageButton
-            android:id="@+id/button_Menu_Main"
+            android:id="@+id/button_main_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"

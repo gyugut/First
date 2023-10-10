@@ -38,13 +38,13 @@
         android:layout_marginEnd="300dp"
         android:text="포털 ID"
         android:textSize="10dp"
-        app:layout_constraintBottom_toTopOf="@id/editText_ID"
+        app:layout_constraintBottom_toTopOf="@id/editText_login_ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView_Door" />
 
     <EditText
-        android:id="@+id/editText_ID"
+        android:id="@+id/editText_login_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -63,25 +63,25 @@
         android:layout_marginEnd="300dp"
         android:text="비밀번호"
         android:textSize="10dp"
-        app:layout_constraintBottom_toTopOf="@id/editText_PW"
+        app:layout_constraintBottom_toTopOf="@id/editText_login_PW"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText_ID" />
+        app:layout_constraintTop_toBottomOf="@id/editText_login_ID" />
 
     <EditText
-        android:id="@+id/editText_PW"
+        android:id="@+id/editText_login_PW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_small"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@id/button_Login"
+        app:layout_constraintBottom_toTopOf="@id/button_login_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView_PW" />
 
     <Button
-        android:id="@+id/button_Login"
+        android:id="@+id/button_login_login"
         android:layout_width="160dp"
         android:layout_height="45dp"
         android:layout_marginTop="30dp"
@@ -89,13 +89,13 @@
         android:onClick="onButtonClick_Register"
         android:text="로그인"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button_Register"
+        app:layout_constraintBottom_toTopOf="@+id/button_login_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText_PW" />
+        app:layout_constraintTop_toBottomOf="@id/editText_login_PW" />
 
     <Button
-        android:id="@+id/button_Register"
+        android:id="@+id/button_login_register"
         android:layout_width="160dp"
         android:layout_height="45dp"
         android:layout_marginTop="5dp"
@@ -107,6 +107,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_Login"
+        app:layout_constraintTop_toBottomOf="@+id/button_login_login"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

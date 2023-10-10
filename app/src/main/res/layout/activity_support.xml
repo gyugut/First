@@ -29,7 +29,7 @@
             android:textSize="24dp" />
 
         <ImageButton
-            android:id="@+id/button_Home_Support"
+            android:id="@+id/button_notice_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
@@ -39,7 +39,7 @@
 
 
         <ImageButton
-            android:id="@+id/button_Menu_Support"
+            android:id="@+id/button_notice_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
@@ -57,7 +57,7 @@
         app:srcCompat="@drawable/quartercircle" />
 
     <EditText
-        android:id="@+id/editText_Support_Support"
+        android:id="@+id/editText_support_support"
         android:layout_width="304dp"
         android:layout_height="375dp"
         android:layout_marginTop="60dp"
@@ -81,28 +81,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Support_Support"
+        app:layout_constraintTop_toBottomOf="@+id/editText_support_support"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/contract1" />
 
     <Button
-        android:id="@+id/button_Submit_Support"
+        android:id="@+id/button_support_submit"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/buttonshape_ordinary"
+        android:background="@drawable/buttonshape_ordinary_small"
         android:text="완료"
-        app:layout_constraintBottom_toTopOf="@+id/button_Back_Support"
+        app:layout_constraintBottom_toTopOf="@+id/button_support_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Support_Support" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_support_support" />
 
     <Button
-        android:id="@+id/button_Back_Support"
+        android:id="@+id/button_support_back"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/buttonshape_ordinary"
+        android:background="@drawable/buttonshape_ordinary_small"
         android:text="돌아가기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
