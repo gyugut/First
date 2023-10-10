@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="450dp"
         android:layout_height="150dp"
-        android:background="@drawable/blackbackground_1"
+        android:background="@drawable/img_background_black"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="90dp"
             android:padding="0dp"
-            app:srcCompat="@drawable/homebutton" />
+            app:srcCompat="@drawable/img_home_black" />
 
 
         <ImageButton
@@ -44,7 +44,7 @@
             android:layout_marginTop="90dp"
             android:padding="0dp"
             app:layout_constraintBottom_toTopOf="@+id/imageView_Status"
-            app:srcCompat="@drawable/menubar_3" />
+            app:srcCompat="@drawable/img_menu_black" />
     </LinearLayout>
     <ImageView
         android:id="@+id/imageView_component_Support"
@@ -52,13 +52,13 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/quartercircle" />
+        app:srcCompat="@drawable/img_quartercircle_black" />
 
     <TextView
         android:id="@+id/textView_notice_noticestack1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/textviewshape_ordinary"
+        android:background="@drawable/xml_textview_long"
         android:gravity="center"
         android:text="경상대 3층 페인트 작업\n(10:00~14:00)"
         android:textColor="@color/black"
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-700dp"
-        android:background="@drawable/textviewshape_ordinary"
+        android:background="@drawable/xml_textview_long"
         android:gravity="center"
         android:text="공대 2호관 정문 계단 보수 공사\n(09:00~14:00)"
         android:textColor="@color/black"
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-140dp"
-        android:background="@drawable/textviewshape_ordinary"
+        android:background="@drawable/xml_textview_long"
         android:gravity="center"
         android:text="사회과학대학 201호 강의실 특강\n(13:00~16:00)"
         android:textColor="@color/black"
@@ -114,7 +114,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack2"
-        android:background="@drawable/buttonshape_ordinary_small"
+        android:background="@drawable/xml_button_white_small"
         app:layout_constraintVertical_bias="0.882" />
 
 
