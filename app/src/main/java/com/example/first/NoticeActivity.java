@@ -34,8 +34,7 @@ public class NoticeActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_MainActivity = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent_MainActivity);
+                finish();
             }
         });
     }

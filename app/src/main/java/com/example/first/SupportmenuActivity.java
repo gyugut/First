@@ -29,6 +29,8 @@ public class SupportmenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_SupportActivity = new Intent(getApplicationContext(), SupportActivity.class);
+                intent_SupportActivity.putExtra("SupportType", "appmalfunc");
+                finish();
                 startActivity(intent_SupportActivity);
             }
         });
@@ -37,6 +39,8 @@ public class SupportmenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_SupportActivity = new Intent(getApplicationContext(), SupportActivity.class);
+                intent_SupportActivity.putExtra("SupportType", "diffclass");
+                finish();
                 startActivity(intent_SupportActivity);
             }
         });
@@ -45,6 +49,8 @@ public class SupportmenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_SupportActivity = new Intent(getApplicationContext(), SupportActivity.class);
+                intent_SupportActivity.putExtra("SupportType", "repotruser");
+                finish();
                 startActivity(intent_SupportActivity);
             }
         });
@@ -53,6 +59,8 @@ public class SupportmenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_SupportActivity = new Intent(getApplicationContext(), SupportActivity.class);
+                intent_SupportActivity.putExtra("SupportType", "facilitymaint");
+                finish();
                 startActivity(intent_SupportActivity);
             }
         });
@@ -60,8 +68,7 @@ public class SupportmenuActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_MainActivity = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent_MainActivity);
+                finish();
             }
         });
     }

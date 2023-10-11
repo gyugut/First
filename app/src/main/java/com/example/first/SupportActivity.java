@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class SupportActivity extends AppCompatActivity {
 
@@ -29,12 +30,16 @@ public class SupportActivity extends AppCompatActivity {
         menu = (ImageButton) findViewById(R.id.button_notice_menu);
         Supportcontent = (EditText) findViewById(R.id.editText_support_support);
 
+        Intent intent = getIntent();
+        String SupportType = intent.getStringExtra("SupportType");
+        //appmalfunc = 앱 작동 오류, diffclass = 강의실 정보 상이, repotruser = 이용자 신고, facilitymaint = 시설 관리
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String Support_Content;
                 Support_Content = Supportcontent.getText().toString();
-
+                finish();
             }
         });
         back.setOnClickListener(new View.OnClickListener() {
@@ -47,8 +52,7 @@ public class SupportActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_MainActivity = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent_MainActivity);
+                finish();
             }
         });
 
