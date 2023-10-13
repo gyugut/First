@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Home = (ImageButton) findViewById(R.id.button_Home_Main);
-        Menu = (ImageButton) findViewById(R.id.button_Menu_Main);
-        Search = (ImageButton) findViewById(R.id.button_Search_Main);
-        Support = (ImageButton) findViewById(R.id.button_Support_Main);
+        Home = (ImageButton) findViewById(R.id.button_main_home);
+        Menu = (ImageButton) findViewById(R.id.button_main_menu);
+        Search = (ImageButton) findViewById(R.id.button_main_search);
+        Support = (ImageButton) findViewById(R.id.button_main_support);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         Support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_SupportActivity = new Intent(getApplicationContext(), SupportActivity.class);
-                startActivity(intent_SupportActivity);
+                Intent intent_SupportmenuActivity = new Intent(getApplicationContext(), SupportmenuActivity.class);
+                startActivity(intent_SupportmenuActivity);
             }
         });
     }

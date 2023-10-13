@@ -3,7 +3,6 @@ package com.example.first;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,8 +16,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.io.BufferedReader;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -37,11 +34,11 @@ public class RegisterActivity extends AppCompatActivity {
         regFirebaseAuth = FirebaseAuth.getInstance();
         regDatabaseRef = FirebaseDatabase.getInstance().getReference("EmptyClassroom");
 
-        Register_ID = (EditText)findViewById(R.id.editText_ID_register);
-        Register_PW = (EditText)findViewById(R.id.editText_PW_register);
-        Register_Name = (EditText)findViewById(R.id.editText_Name_register);
-        Register_Major = (EditText) findViewById(R.id.editText_Major_register);
-        Register_Button = (Button) findViewById(R.id.button_Register_register);
+        Register_ID = (EditText)findViewById(R.id.editText_register_ID);
+        Register_PW = (EditText)findViewById(R.id.editText_register_PW);
+        Register_Name = (EditText)findViewById(R.id.editText_register_name);
+        Register_Major = (EditText) findViewById(R.id.editText_register_major);
+        Register_Button = (Button) findViewById(R.id.button_register_register);
 
         Register_Button.setOnClickListener(new View.OnClickListener() {
             @Override
