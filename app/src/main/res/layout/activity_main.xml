@@ -9,30 +9,31 @@
 
 
     <ImageButton
-        android:id="@+id/button_Search_Main"
+        android:id="@+id/button_main_search"
         android:layout_width="352dp"
         android:layout_height="62dp"
         android:padding="0dp"
         android:scaleType="fitCenter"
         android:text="Search"
-        app:layout_constraintBottom_toTopOf="@+id/button_Support_Main"
+        app:layout_constraintBottom_toTopOf="@+id/button_main_support"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/search_botton" />
+        app:srcCompat="@drawable/img_search_button" />
 
     <ImageButton
-        android:id="@+id/button_Support_Main"
+        android:id="@+id/button_main_support"
         android:layout_width="352dp"
         android:layout_height="62dp"
         android:layout_marginBottom="64dp"
-        android:scaleType="fitCenter"
         android:padding="0dp"
+        android:scaleType="fitCenter"
         android:text="Support"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/component2"/>
+        app:srcCompat="@drawable/img_support_button" />
 
     <ImageView
         android:id="@+id/imageView_Status"
@@ -40,18 +41,18 @@
         android:layout_height="200dp"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="132dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_Search_Main"
+        app:layout_constraintBottom_toTopOf="@+id/button_main_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/openexitdoor2" />
+        app:srcCompat="@drawable/img_bigdoor_trans" />
 
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="450dp"
         android:layout_height="150dp"
-        android:background="@drawable/blackbackground_1"
+        android:background="@drawable/img_background_black"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,23 +69,23 @@
             android:textSize="24dp" />
 
         <ImageButton
-            android:id="@+id/button_Home_Main"
+            android:id="@+id/button_main_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="90dp"
             android:padding="0dp"
-            app:srcCompat="@drawable/homebutton" />
+            app:srcCompat="@drawable/img_home_black" />
 
 
         <ImageButton
-            android:id="@+id/button_Menu_Main"
+            android:id="@+id/button_main_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
             android:padding="0dp"
             app:layout_constraintBottom_toTopOf="@+id/imageView_Status"
-            app:srcCompat="@drawable/menubar_3" />
+            app:srcCompat="@drawable/img_menu_black" />
     </LinearLayout>
 
     <ImageView
@@ -93,6 +94,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/quartercircle" />
+        app:srcCompat="@drawable/img_quartercircle_black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
