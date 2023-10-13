@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         Search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent_GidoActivity = new Intent(getApplicationContext(), GidoActivity.class);
+                startActivity(intent_GidoActivity);
             }
         });
 
