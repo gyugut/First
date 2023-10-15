@@ -13,6 +13,12 @@
         android:theme="@style/Theme.First"
         tools:targetApi="31">
         <activity
+            android:name=".ReservehistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".NoticeActivity"
             android:exported="false" />
         <activity
@@ -36,13 +42,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCSJ7RFSxODUzE-GOsJdy2uzkAfmxTLIhk"/>
+            android:value="AIzaSyCSJ7RFSxODUzE-GOsJdy2uzkAfmxTLIhk" />
 
-        <activity android:name=".GidoActivity"
-            android:exported="true">
-        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
