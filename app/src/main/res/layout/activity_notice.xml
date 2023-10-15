@@ -46,6 +46,7 @@
             app:layout_constraintBottom_toTopOf="@+id/imageView_Status"
             app:srcCompat="@drawable/img_menu_black" />
     </LinearLayout>
+
     <ImageView
         android:id="@+id/imageView_component_Support"
         android:layout_width="wrap_content"
@@ -108,13 +109,13 @@
         android:id="@+id/button_notice_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/xml_button_white_small"
         android:text="돌아가기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack2"
-        android:background="@drawable/xml_button_white_small"
         app:layout_constraintVertical_bias="0.882" />
 
 
