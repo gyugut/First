@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class ReservelogActivity extends AppCompatActivity {
-    ImageButton home, menu;
-    Button back;
+    private ImageButton home, menu;
+    private Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,9 @@ public class ReservelogActivity extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                finish();
+                startActivity(intent_MenuActivity);
             }
         });
 

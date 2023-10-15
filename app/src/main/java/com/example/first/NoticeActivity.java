@@ -37,5 +37,14 @@ public class NoticeActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                finish();
+                startActivity(intent_MenuActivity);
+            }
+        });
     }
 }

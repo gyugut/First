@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton Home, Menu, Search, Support;
+    private ImageButton Home, Menu, Search, Support;
 
 
 
@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
         Menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                finish();
+                startActivity(intent_MenuActivity);
             }
         });
 

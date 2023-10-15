@@ -10,8 +10,8 @@ import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    ImageButton home, menu;
-    Button uselog,logout;
+    private ImageButton home, menu;
+    private Button uselog,logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,9 @@ public class ProfileActivity extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                finish();
+                startActivity(intent_MenuActivity);
             }
         });
 

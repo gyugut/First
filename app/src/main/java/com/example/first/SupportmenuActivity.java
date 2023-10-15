@@ -22,8 +22,8 @@ public class SupportmenuActivity extends AppCompatActivity {
         diffclass = (Button) findViewById(R.id.button_supportmenu_diffclass);
         reportuser = (Button) findViewById(R.id.button_supportmenu_reportuser);
         facilitymaint = (Button) findViewById(R.id.button_supportmenu_facilitymaint);
-        home = (ImageButton) findViewById(R.id.button_supportmenu_home);
-        menu = (ImageButton) findViewById(R.id.button_supportmenu_menu);
+        home = (ImageButton) findViewById(R.id.button_menu_home);
+        menu = (ImageButton) findViewById(R.id.button_menu_menu);
 
         appmalfunc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +69,15 @@ public class SupportmenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                finish();
+                startActivity(intent_MenuActivity);
             }
         });
     }
