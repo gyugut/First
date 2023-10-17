@@ -29,7 +29,7 @@
             android:textSize="24dp" />
 
         <ImageButton
-            android:id="@+id/button_notice_home"
+            android:id="@+id/button_support_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
@@ -39,7 +39,7 @@
 
 
         <ImageButton
-            android:id="@+id/button_notice_menu"
+            android:id="@+id/button_support_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.085" />
 
     <TextView
-        android:id="@+id/textView_notice_noticestack2"
+        android:id="@+id/textView_notice_noticestack3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-700dp"
@@ -86,11 +86,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_reservehistory_historystack3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack2"
         app:layout_constraintVertical_bias="0.734" />
 
     <TextView
-        android:id="@+id/textView_reservehistory_historystack3"
+        android:id="@+id/textView_notice_noticestack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-140dp"
@@ -116,7 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_notice_noticestack3"
         app:layout_constraintVertical_bias="0.882" />
 
 

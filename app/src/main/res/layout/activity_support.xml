@@ -30,7 +30,7 @@
             android:textSize="24dp" />
 
         <ImageButton
-            android:id="@+id/button_notice_home"
+            android:id="@+id/button_support_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
@@ -40,7 +40,7 @@
 
 
         <ImageButton
-            android:id="@+id/button_notice_menu"
+            android:id="@+id/button_support_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
@@ -102,7 +102,7 @@
         android:id="@+id/button_support_back"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/xml_button_white_small"
         android:text="돌아가기"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class SupportActivity extends AppCompatActivity {
 
@@ -26,8 +25,8 @@ public class SupportActivity extends AppCompatActivity {
 
         submit = (Button) findViewById(R.id.button_support_submit);
         back = (Button) findViewById(R.id.button_support_back);
-        home = (ImageButton) findViewById(R.id.button_notice_home);
-        menu = (ImageButton) findViewById(R.id.button_notice_menu);
+        home = (ImageButton) findViewById(R.id.button_support_home);
+        menu = (ImageButton) findViewById(R.id.button_support_menu);
         Supportcontent = (EditText) findViewById(R.id.editText_support_support);
 
         Intent intent = getIntent();

@@ -20,8 +20,8 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        home = (ImageButton) findViewById(R.id.button_menu_home);
-        menu = (ImageButton) findViewById(R.id.button_menu_menu);
+        home = (ImageButton) findViewById(R.id.button_supportmenu_home);
+        menu = (ImageButton) findViewById(R.id.button_supportmenu_menu);
         profile = (Button) findViewById(R.id.button_menu_profile);
         setting = (Button) findViewById(R.id.button_menu_setting);
         notice = (Button) findViewById(R.id.button_menu_notice);

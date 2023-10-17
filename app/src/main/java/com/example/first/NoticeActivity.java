@@ -21,8 +21,8 @@ public class NoticeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notice);
 
         back = (Button) findViewById(R.id.button_notice_back);
-        home = (ImageButton) findViewById(R.id.button_notice_home);
-        menu = (ImageButton) findViewById(R.id.button_notice_menu);
+        home = (ImageButton) findViewById(R.id.button_support_home);
+        menu = (ImageButton) findViewById(R.id.button_support_menu);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
