@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
 
-
     <ImageButton
         android:id="@+id/button_main_search"
         android:layout_width="352dp"
@@ -41,10 +40,10 @@
         android:id="@+id/linearLayout"
         android:layout_width="450dp"
         android:layout_height="150dp"
-        android:background="@drawable/img_background_black"
+        android:background="@drawable/img_roundbackground_black"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -52,7 +51,7 @@
             android:id="@+id/textView"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="45dp"
             android:layout_marginTop="90dp"
             android:text="Empty Classroom"
             android:textColor="@color/white"
@@ -89,10 +88,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:background="@drawable/img_graybackground"
         app:layout_constraintBottom_toTopOf="@+id/button_main_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/img_graybackground"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
 
