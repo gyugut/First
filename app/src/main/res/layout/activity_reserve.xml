@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReserveActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        android:background="@drawable/img_roundbackground_black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_reserve_bdlginfo"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="90dp"
+            android:text="인문대학"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <ImageButton
+            android:id="@+id/button_menu_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="90dp"
+            android:padding="0dp"
+            app:srcCompat="@drawable/img_home_black" />
+
+
+        <ImageButton
+            android:id="@+id/button_menu_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:padding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_Status"
+            app:srcCompat="@drawable/img_menu_black" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_component_Supportmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/img_quartercircle_black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
