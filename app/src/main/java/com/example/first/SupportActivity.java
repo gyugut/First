@@ -55,5 +55,14 @@ public class SupportActivity extends AppCompatActivity {
             }
         });
 
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                intent_MenuActivity.putExtra("privActivity", MenuActivity.SUPPORT_ACTIVITY_CODE);
+                startActivity(intent_MenuActivity);
+            }
+        });
+
     }
 }

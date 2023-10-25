@@ -32,7 +32,7 @@ public class ReservelogActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
-                finish();
+                intent_MenuActivity.putExtra("privActivity", MenuActivity.RESERVELOG_ACTIVITY_CODE);
                 startActivity(intent_MenuActivity);
             }
         });

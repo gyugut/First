@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                intent_MenuActivity.putExtra("privActivity", MenuActivity.MAIN_ACTIVITY_CODE);
                 startActivity(intent_MenuActivity);
             }
         });

@@ -34,6 +34,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_MenuActivity = new Intent(getApplicationContext(), MenuActivity.class);
+                intent_MenuActivity.putExtra("privActivity", MenuActivity.PROFILE_ACTIVITY_CODE);
                 startActivity(intent_MenuActivity);
             }
         });
