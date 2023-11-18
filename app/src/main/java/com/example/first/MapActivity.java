@@ -1,7 +1,9 @@
 package com.example.first;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -9,9 +11,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class MapActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
     int i = 0;
 
     private GoogleMap mMap;
@@ -30,15 +33,25 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     public void onMapReady(final GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng SEOUL = new LatLng(37.556, 126.97);
+        LatLng cnu = new LatLng(36.366718, 127.344309);
 
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(SEOUL);
-        markerOptions.title("서울");
-        markerOptions.snippet("한국 수도");
+        markerOptions.position(cnu);
+        markerOptions.title("충남대학교");
+        markerOptions.snippet("공대 5호관");
+
+
 
         mMap.addMarker(markerOptions);
+        mMap.setOnMarkerClickListener(this);
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cnu, 100));
+    }
+
+    @Override
+    public boolean onMarkerClick(@NonNull Marker marker) {
+        Intent intent_temp = new Intent(getApplicationContext(), RegisterActivity.class);
+        startActivity(intent_temp);
+        return true;
     }
 }
